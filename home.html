@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap" rel="stylesheet">
+    <title>let's Travel</title>
+</head>
+
+<body style="background: #acb6e5;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #86fde8, #acb6e5);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #86fde8, #acb6e5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background: #4AC29A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #BDFFF3, #4AC29A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BDFFF3, #4AC29A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-2" style="font-family: 'Noto Serif', serif;" href="#">Let's Travel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse me-5 fs-4" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact.html">ContactUs</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                      <a class="nav-link" href="/registration.html">RegistrationForTrip</a>
+                  </li>
+                 
+                      
+                    </li>
+                </ul>
+                <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">log in</button>
+          <button class="btn btn-outline-primary ms-2" data-bs-toggle="modal" data-bs-target="#signupModal">sing up</button>
+            </div>
+        </div>
+    </nav>
+    <div id="alertbox"></div>
+    <!-- loginModal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">log in</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control " id="email" aria-describedby="emailHelp" value="" required>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="passsword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="passsword">
+            </div>
+            
+            <button type="submit" id="login" class="btn btn-primary my-2" data-bs-dismiss="modal">login</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- signupModal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Create an Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="useremail" placeholder="name@example.com">
+              <label for="useremail">Email address</label>
+            </div>
+            <div class="form-floating">
+              <input type="password" class="form-control  " id="userpassword1" placeholder="Password">
+              <label for="userpassword1">Password</label>
+            </div>
+            <br>
+            <div class="form-floating">
+              <input type="password" class="form-control " id="userpassword2"  placeholder="Password">
+
+              <label for="userpassword2">Confirm passsword</label>
+            </div>
+            <button type="submit" id="submit" class="btn btn-primary my-2" >submit</button>
+          </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+    <div class="homeapge">
+        <img src="image/brand1.png" class="img-fluid" alt="..." style="width: auto; height: auto;">
+    </div>
+    <div class="text">
+        <p>We are the best travel agency to provide all india tour with a adjustable price range .We have also some
+            extra facilities to above the 50 both male and female and neawly marriage couple
+
+            To know more check our blog and book your trip for your upcoming vacation befor all slot are book.
+        </p>
+    </div>
+    <div class="bg-dark text-secondary px-4 py-5 text-center">
+        <div class="py-5">
+            <h1 class="display-5 fw-bold text-white">Fulfill your dream with traveling your motherland</h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                    world’s most
+                    popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+                    extensive
+                    prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+      
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+    <script src="/js/home.js"></script>
+</body>
+
+</html>

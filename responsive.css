@@ -1,0 +1,53 @@
+@media  screen and (max-width:768px) {
+
+    .why{
+        display: block;
+    }
+    .image{
+        margin-top: 10px;
+    }
+    .center{
+        width: 100%;
+    }
+    .mahal{
+        width: 100%;
+    }
+    .upper{
+        font-size: 22px;
+    }
+    .inner{
+        font-size: 17px;
+    }
+    .center{
+        padding: 8%;
+    }
+    .image{
+        padding: 4%;
+    }
+    
+   }
+   @media (min-width:768px) and (max-width:1200px) {
+    .why{
+        display: block;
+    }
+    .image{
+        margin-top: 10px;
+        padding: 4%;
+    }
+    
+   }
+   @media (max-width:450px){
+        .start{
+            font-size: 23px;
+        }
+        
+   }
+
+   @media  screen and (max-width:350px) {  
+   
+    .image{
+        padding: 10%;
+        box-sizing: border-box;
+        margin-top: 10px;
+    }
+   }

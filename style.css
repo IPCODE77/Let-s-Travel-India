@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200&family=PT+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Montserrat:ital,wght@0,400;1,200&family=PT+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Source+Serif+Pro:ital,wght@1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Source+Serif+Pro:ital,wght@1,400;1,600&family=Style+Script&display=swap');
+
+.text{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 0 10%;
+    padding-top: 0px;
+    word-spacing: 9px;
+    line-height: 1.6;
+    padding-top: 2%;
+    font-size: 20px;
+    height: auto;
+    /* background-color: rgba(0,0,0,0.2); */
+     font-family: 'Lobster', cursive;
+    font-family: 'Source Serif Pro', serif;
+    text-align: justify;
+}
+.travel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: 'Inconsolata', monospace;
+
+}
+ .india{
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    color: #802183;
+    margin-top: 15px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-shadow: 2px 1px beige;
+}
+.reason h2{
+    text-align: center;
+    margin: 10px;
+    color: gray;
+    font-family: 'Inconsolata', monospace;
+}
+p.first{
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(56, 49, 61);
+    padding: 0px 16px;
+    line-height: 2;
+    word-spacing: 5px;
+}
+.why{
+    display:flex;
+    justify-content: space-around;
+}
+.image{
+    height: 350px;
+    width: 100%;
+}
+body{
+    background: #43C6AC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F8FFAE, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F8FFAE, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+}
+.upper{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    color: maroon;
+    font-family: 'Libre Baskerville', serif;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'PT Sans', sans-serif;
+}
+.inner{
+    line-height: 1.2;
+    font-size: 21px;
+    word-spacing: 4px;
+    text-align: justify;
+    padding: 0px 10%;
+    color: #4f4f4f;
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'PT Sans', sans-serif;
+
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.trip{
+    text-align: center;
+}
+
+.start{
+    font-family: 'Andada Pro', serif;
+    text-decoration: none;
+    position: relative;
+     padding-bottom: 9px;
+     font-size: 35px;
+     text-shadow: 2px 1px 0px #2be1bf;
+}
+
+.start::after{
+    content: "";
+    width: 0%;
+    height: 5px;
+    position: absolute;
+    background-color: deeppink ;
+    bottom: 0%;
+    border-radius: 10px;
+    transition: all 500ms ease;
+    left: 50%;
+    right: 50%;
+    display: block;
+    background: #ff4b1f;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1fddff, #ff4b1f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #1fddff, #ff4b1f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+ .start:hover::after{
+    left: 0%;
+    width: 100%;
+} 
+.forms{
+    background: #A770EF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
+    width: 100%;
+}
+.lucky{
+    text-align:start;
+    padding-left: 2%;
+}
+#alertbox{
+    height: 42px;
+    background-color: #fdf2f2;
+    width: 100%;
+
+}
